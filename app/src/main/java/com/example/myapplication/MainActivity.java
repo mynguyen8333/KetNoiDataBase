@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         DataUser dataUser = new DataUser(this,"userdb.sqlite",null,1);
+        dataUser.addUser(new User(1,"my nguyen"));
 
     }
 }

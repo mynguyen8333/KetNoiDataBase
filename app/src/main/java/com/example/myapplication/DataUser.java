@@ -19,6 +19,7 @@ public class DataUser extends SQLiteOpenHelper {
         String sql =" CREATE TABLE user (" +
                 "id INTEGER PRIMARY KEY," +
                 "name TEXT NOT NULL)";
+        db.execSQL(sql);
     }
     public void addUser(User user){
         SQLiteDatabase db = this.getWritableDatabase();
